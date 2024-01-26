@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Redirecting...</title>
+    <script>
+
+        function getQueryString() {
+            const queryString = window.location.search.slice(2); 
+            return queryString;
+        }
+
+        
+        function redirectToPermalink(queryString) {
+
+            fetch('/permalinks.json')
+                .then(response => response.json())
+                .then(data => {
+                    if (data.hasOwnProperty(queryString)) {
+                        window.location.href = data[queryString];
+                    } else {
+                        window.location.href = '/';
+                    }
+                }).catch(error => {
+                    window.location.href = '/';
+                });
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const queryString = getQueryString();
+            if (queryString) {
+                redirectToPermalink(queryString);
+            }
+        });
+    </script>
+</head>
+<body>
+
+</body>
