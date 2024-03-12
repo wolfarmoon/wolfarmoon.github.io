@@ -1,0 +1,156 @@
+/* Global Style Sheet
+ *
+ *
+ * Imn't the author 
+ */
+
+
+
+
+html {
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #1a1917;
+    color: #eee;
+ 
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.2;
+    margin: 0;
+    padding: 15px 15px 30px 15px;
+}
+
+
+h1, h2, h3, h4, h5 {
+    font-weight: initial;
+}
+
+h1 {
+    font-size: 64px;
+    padding: 0;
+    margin: 25px 0 0 0;
+}
+
+h2 {
+    font-size: 48px;
+}
+
+h3 {
+    font-size: 32px;
+    margin: 15px 0 5px 0;
+}
+
+h4,h5 {
+    font-size: 16px;
+}
+
+.container #tWorking {
+
+}
+
+#header_right {
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+#header_left {
+    float:left;
+    text-align:center;
+}
+#header_left > a > img {
+    width: 180px;
+    box-shadow: 5px 5px #555;
+    text-align: center;
+    background-color: #00002F;
+}
+
+#content {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#header {
+    clear: both;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p {margin-top: 10px;}
+
+code {
+    display: block;
+    background-color: #282828;
+    color: #ccc;
+    width: 100%;
+    padding: 5px 5px 10px 15px;
+    margin: 10px 0;
+    white-space: pre;
+    box-shadow: 6px 6px #000;
+    overflow-x: auto;
+}
+
+
+/* owo */
+
+a {
+    text-decoration:underline;
+    
+    
+}
+
+
+#tooltip {
+    border-bottom: 1px dotted;
+}
+
+/* colors */
+
+.red {
+    color: #ff3131;
+    text-decoration-color: #ff3131;
+}
+
+.green {
+    color: #96ff33;
+    text-decoration-color: #96ff33;
+}
+
+.blue {
+    color: hsl(209, 100%, 50%);
+    text-decoration-color: hsl(209, 100%, 50%);
+}
+
+.magenta {
+    color: #ff30ff;
+    text-decoration-color: #ff30ff;
+    
+}
+
+.gray {
+    color: #7a7a7a;
+    text-decoration-color: #7a7a7a;
+    
+}
+
+
+.block {
+    display: block;
+    background-color: #282828;
+    color: #ffc918;
+    width: 100%;
+    padding: 5px 5px 10px 15px;
+    margin: 10px 0;
+    white-space: pre;
+    
+    overflow-x: auto;
+}
+
+.footer {
+    padding-top: 2em;
+    text-align: center;
+}
