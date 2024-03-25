@@ -1,0 +1,58 @@
+.projectsContainer {
+    background-color: #000000;
+    padding: 15px 15px 15px 15px;
+    margin-bottom: 15px;
+}
+
+.projectsContainer .subContainer {
+    margin-left:   10px;
+    margin-right:  10px;
+    margin-bottom: 15px;
+    padding:  15px 15px 15px 15px;
+
+    justify-content: center;
+}
+
+.projectsContainer .project {
+    border-color: #ffffff;
+    border-width:   1px;
+    border-style:   solid;
+
+    padding: 5px 5px 5px 5px;
+
+}
+
+/* sshsh */
+/*
+.project div.image {
+
+}
+*/ 
+
+div.project {
+    margin-bottom: 10px;
+}
+
+.project div.projectMeta {
+    display: flex;
+}
+
+.projectMeta div.title {
+    flex-grow: 1;
+    font-weight: bold;
+}
+
+.projectMeta div.date {
+    flex-grow: -1;
+}
+
+
+.project div.description {
+    text-justify: newspaper;
+}
+
+.project div.links {
+    padding-top: 5px;
+
+}
+
