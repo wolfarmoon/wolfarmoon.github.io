@@ -2,85 +2,32 @@
     Global Style Sheet
 */
 
-
 @import"https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap";
 
-@import "./vars.css";
 
-html {
-    box-sizing: border-box;
-    overflow-x: hidden;
-
+:root {
     font-family: JetBrains Mono, monospace;
-
-    font-size: 14px;
-
-    line-height: 1.5;
-
-}
-
-body {
-    background-color: #000000;
-    color: #eee;
-
+    
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    line-height: 1.2;
-    margin: 0;
-    padding: 15px 15px 30px 15px;
+
+    --var-background-color: #0a0316;
+    --var-text-color: #fff5c8;
+    --var-text-dim-color: #9e8d76;
+    --var-text-accent-color: #ff275d;
+    --var-text-accent-dim-color: #aa1636;
+
 }
 
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-    font-weight: initial;
-}
-
-h1 {
-    font-size: 46px;
-    padding: 0;
-    margin: 25px 0 0 0;
-}
-
-h2 {
-    font-size: 35px;
-}
-
-h3 {
-    font-size: 25px;
-    margin: 15px 0 5px 0;
-}
-
-h4,
-h5 {
-    font-size: 16px;
-}
-
-
-#header_right {
-    align-items: center;
-    padding: 20px;
-    text-align: center;
-}
-
-#header_left {
-    float: left;
-    text-align: center;
-}
-
-#header_left>a>img {
-    width: 180px;
-    box-shadow: 5px 5px #555;
-    text-align: center;
-    background-color: #00002F;
+.content-auto-margins {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1440px;
 }
 
 #content {
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 #header {
@@ -90,8 +37,48 @@ h5 {
     margin-right: auto;
 }
 
+html {
+    box-sizing: border-box;
+    overflow-x: hidden;
+
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+body {
+    background-color: var(--var-background-color);
+    color: var( --var-text-color);
+}
+
+
+h1, h2, h3, h4, h5 {
+    font-weight: initial;
+}
+
+h1 {
+    color: var( --var-text-accent-color);
+    font-size: 42px;
+    padding: 0;
+    margin: 25px 0 0 0;
+}
+
+h2 {
+    color: var( --var-text-accent-color);
+    font-size: 28px;
+}
+
+h3 {
+    color: var( --var-text-accent-color);
+    font-size: 21px;
+    margin: 15px 0 5px 0;   
+}
+
+
+
+
 p {
-    margin-top: 10px;
+    margin-top: 3px;
 }
 
 code {
@@ -109,39 +96,8 @@ code {
 
 /* owo */
 
-
-
 #tooltip {
     border-bottom: 1px dotted;
-}
-
-/* colors */
-
-.red {
-    color: #ff3131;
-    text-decoration-color: #ff3131;
-}
-
-.green {
-    color: #96ff33;
-    text-decoration-color: #96ff33;
-}
-
-.blue {
-    color: hsl(209, 100%, 50%);
-    text-decoration-color: hsl(209, 100%, 50%);
-}
-
-.magenta {
-    color: #ff30ff;
-    text-decoration-color: #ff30ff;
-
-}
-
-.gray {
-    color: #7a7a7a;
-    text-decoration-color: #7a7a7a;
-
 }
 
 
@@ -159,6 +115,7 @@ code {
 
 .footer {
     padding-top: 2em;
+    
     text-align: center;
 }
 
@@ -172,17 +129,20 @@ nav {
 }
 
 .navl.active {
+    color: var(--var-text-accent-dim-color);
     cursor: default;
     text-decoration: none
 }
 
 a {
-    color: #949494;
+    color: var(--var-text-accent-color);
     text-decoration: underline;
 }
 
+/* add sth*/
+
 a.external:after {
-    content: " ↗";
+    content: "↗";
 }
 
 div.progress {

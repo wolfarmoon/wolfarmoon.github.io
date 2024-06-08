@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>~wolfarmoon / template</title>
+    <link rel="stylesheet" href="styles/global.css">
+    <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "fd567863f19549de8b2a27b38c627837"}'></script><!-- End Cloudflare Web Analytics -->
+    
+</head>
+
+<body>
+    <div class="page">
+
+        <div id="header">
+            <nav style="display:flex">
+                <p><a class="navl active" href="/">home</a></p>
+                <p><a class="navl" href="/projects.html">projects</a></p>
+                <p><a class="navl " href="#">blog (coming soon)</a></p>
+            </nav>
+        </div>
+
+        <div class="content-auto-margins">
+            <div id="content">
+
+            </div>
+        </div>
+
+        <div class="footer">
+            <h6>&copy; wolfarmoon |  CC BY-NC 4.0</h6>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,5 +1,5 @@
 .projectsContainer {
-    background-color: #000000;
+    
     padding: 15px 15px 15px 15px;
     margin-bottom: 15px;
 }
@@ -48,7 +48,7 @@ div.project {
 
 
 .project div.description {
-    text-justify: newspaper;
+    text-justify: newspaper; /* what do this even mean */
 }
 
 .project div.links {
