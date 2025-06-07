@@ -14,7 +14,7 @@
 }
 
 .projectsContainer .project {
-    border-color: #ffffff;
+    border-color: var(--var-text-dim-color);
     border-width:   1px;
     border-style:   solid;
 
@@ -38,11 +38,14 @@ div.project {
 }
 
 .projectMeta div.title {
+    color: var(--var-text-accent-color);
     flex-grow: 1;
     font-weight: bold;
 }
 
 .projectMeta div.date {
+    color: var(--var-text-accent-dim-color);
+    padding-right: 5px;
     flex-grow: -1;
 }
 
