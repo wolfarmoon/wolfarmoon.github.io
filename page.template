@@ -1,35 +1,52 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>~wolfarmoon / template</title>
-    <link rel="stylesheet" href="styles/global.css">
-    <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "fd567863f19549de8b2a27b38c627837"}'></script><!-- End Cloudflare Web Analytics -->
-    
+
+    <!-- Primary Meta Tags -->
+    <title>Wolfarmoon's Personal Website</title>
+    <meta name="" />
+    <meta name="description"
+        content="" />
+
+    <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection">
+
+    <!-- open graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://metatags.io/" />
+    <meta property="og:title" content="Wolfarmoon's Personal Website" />
+    <meta property="og:description"
+        content="Welcome to my website! I am a furry game developer, artist and musician. Here you will find some of my quirky thoughts & creations! 🐺" />
+    <!--  <meta property="og:image" content="" /> -->
+
+    <!-- Website stuff -->
+    <meta name="theme-color" content="#ffffff">
+    <meta name="keywords"
+        content="wolfarmoon, furry, game development, artist, musician, indie games, illustration, painting, furry art, audio synthesis">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <title>Wolfarmoon</title>
+    <link rel="stylesheet" href="resources/styles/global.css">
+    <link rel="author" href="humans.txt" />
+
+
+    <!-- Cloudflare Web Analytics -->
+    <script defer src='https://static.cloudflareinsights.com/beacon.min.js'
+        data-cf-beacon='{"token": "fd567863f19549de8b2a27b38c627837"}'></script><!-- End Cloudflare Web Analytics -->
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+
 </head>
-
 <body>
-    <div class="page">
-
-        <div id="header">
-            <nav style="display:flex">
+   <div id="header">
+        <nav style="display:flex">
                 <p><a class="navl active" href="/">home</a></p>
+                <p><a class="navl" href="/aboutme.html">about me</a></p>
                 <p><a class="navl" href="/projects.html">projects</a></p>
-                <p><a class="navl " href="#">blog (coming soon)</a></p>
-            </nav>
-        </div>
-
-        <div class="content-auto-margins">
-            <div id="content">
-
-            </div>
-        </div>
-
-        <div class="footer">
-            <h6>&copy; wolfarmoon |  CC BY-NC 4.0</h6>
-        </div>
+        </nav>
     </div>
 
 </body>

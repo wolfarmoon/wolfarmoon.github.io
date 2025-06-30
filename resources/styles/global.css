@@ -1,0 +1,282 @@
+/* 
+    Global Style Sheet
+*/
+
+@font-face {
+    font-family: 'Inconsolata';
+    src: url('/resources/fonts/Inconsolata/Inconsolata-VariableFont_wdth,wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'CactusClassical';
+    src: url('/resources/fonts/Cactus_Classical_Serif/CactusClassicalSerif-Regular.ttf') format('truetype');
+}
+
+:root {
+    font-family: Inconsolata;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    --var-background-color: #141413;
+    --var-text-color: hsl(266, 100%, 92%);
+    --var-text-dim-color: hsl(264, 12%, 68%);
+    --var-text-accent-color: #ff2756;
+    --var-text-accent-dim-color: #aa1636;
+    --var-h-text-color: var(--var-text-accent-color);
+
+    --var-h-font-family: CactusClassical, serif;
+
+    --var-font-size: 16px;
+
+    font-size: var(--var-font-size);
+
+    --var-h1-font-size: 1.875rem;
+    --var-h2-font-size: 1.406rem;
+    --var-h3-font-size: 1.055rem;
+
+
+
+    --var-code-font-size: 16px;
+    --var-code-background-color: #282828;
+    --var-code-text-color: #ccc;
+
+
+
+}
+
+.content-auto-margins {
+
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1440px;
+
+}
+
+#content {
+
+    margin-left: 40px;
+    margin-right: 40px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+
+}
+
+#header {
+    clear: both;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+html {
+    box-sizing: border-box;
+    overflow-x: hidden;
+    height: 100%;
+    line-height: 1.5;
+}
+
+
+body {
+    background-color: var(--var-background-color);
+
+    color: var(--var-text-color);
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: var(--var-h-font-family);
+    color: var(--var-h-text-color);
+    font-weight: initial;
+}
+
+h1 {
+
+    font-size: var(--var-h1-font-size);
+    padding: 0;
+    margin: 25px 0 0 0;
+}
+
+h2 {
+
+    font-size: var(--var-h2-font-size);
+}
+
+h3 {
+
+    font-size: var(--var-h3-font-size);
+    margin: 15px 0 5px 0;
+}
+
+
+
+
+p {
+    margin-top: 3px;
+}
+
+code {
+    display: block;
+    background-color: var(--var-code-background-color);
+    color: var(--var-code-text-color);
+    width: 100%;
+    padding: 5px 5px 10px 15px;
+    margin: 10px 0;
+    white-space: pre;
+    box-shadow: 6px 6px #000;
+    overflow-x: auto;
+}
+
+
+/* owo */
+
+#tooltip {
+    border-bottom: 1px dotted;
+}
+
+
+.block {
+    display: block;
+    background-color: #282828;
+    color: #ffffff;
+    width: 100%;
+    padding: 5px 5px 10px 15px;
+    margin: 10px 0;
+    white-space: pre;
+
+    overflow-x: auto;
+}
+
+.footer {
+    padding-top: --webkit-viewport-fit;
+
+    text-align: center;
+}
+
+nav {
+    padding-top: 15px;
+    padding-bottom: 25px;
+}
+
+.navl {
+    margin-right: 1.5rem
+}
+
+.navl.active {
+    color: var(--var-text-accent-dim-color);
+    cursor: default;
+    text-decoration: none
+}
+
+a {
+    color: var(--var-text-accent-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--var-text-accent-dim-color);
+    text-decoration: underline;
+}
+
+
+
+a[href^="http://"]:not([href*="//wolfarmoon.dev"]):not(.noext),
+a[href^="https://"]:not([href*="//wolfarmoon.dev"]):not(.noext),
+a[href^="//"]:not([href*="//wolfarmoon.dev"]):not(.noext),
+a>h1:not(.noext) {
+
+    background: url(/assets/ext.svg) no-repeat;
+
+    background-origin: padding-box;
+    padding-right: 1.3em;
+    background-size: 0.7em;
+    background-position-y: center;
+    background-position-x: calc(100% - 0.3em);
+
+}
+
+
+div.progress {
+    border-style: solid;
+    border-width: 1px;
+}
+
+div.progress .bar {
+    margin: 2px 2px 2px 2px;
+    margin-right: calc(100% - var(--bar-completeness));
+    content: var(--bar-completeness);
+}
+
+.linkbadge {
+    display: inline-block;
+    background-color: var(--var-text-color);
+    color: var(--var-text-accent-color), 2;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.links {
+    color: var(--var-text-dim-color)
+}
+
+
+
+.content-element {
+    flex: auto;
+    flex-wrap: wrap;
+    outline: 1px solid var(--var-text-color);
+    padding: 0px 10px 15px 15px;
+    margin: 5px 5px 5px 5px;
+    border-radius: 5px;
+    text-align: justify;
+    text-wrap: pretty;
+
+
+}
+
+
+.throbber {
+    width: calc(var(--var-font-size) * 1/2);
+    height: calc(var(--var-font-size) * 1/2);
+    border: 3px solid rgba(255, 0, 0, 0.1);
+    border-radius: 50%;
+    border-top: 3px solid var(--var-text-accent-color);
+    animation: spin 1s linear infinite;
+    /* this should be inline with the text */
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.row {
+    flex: 1;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: var(--var-code-background-color);
+    color: var(--var-code-text-color);
+
+    overflow-x: auto;
+
+    display: flex;
+    flex-direction: row;
+
+}
