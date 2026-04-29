@@ -1,0 +1,118 @@
+:root {
+    --text-color-normal: #d8d8d8;
+    --text-color-accent: #70b600;
+    --text-color-dim: #838383;
+    --background-color: #222;
+    --text-links: #ff1e5a;
+    --color-lb: #acb7ff;
+    
+
+}
+
+a {
+    color: var(--text-links);
+}
+
+a:hover {
+    color: color-mix(in hsl,  var(--text-links) 50%, var(--color-lb) 50%);
+}
+body {
+    background-color: var(--background-color);
+    color: var(--text-color-normal);
+
+    font-family: 'Hasklig';
+    font-style: normal;
+    font-size: calc(0.8px* 1rem);
+}
+
+
+
+/* header stuff */
+h1,
+h2,
+h3 {
+    font-size: 20px;
+}
+
+h1:before,
+h2:before,
+h3::before {
+    font-style: normal;
+    font-weight: 300;
+
+    margin-right: 10px;
+    color: var(--text-color-dim);
+}
+
+h1:hover::before,
+h2:hover::before,
+h3:hover::before {
+    color: color-mix(in srgb, var(--text-color-dim) 50%, #acb7ff 50%);
+}
+
+h1::before {
+    content: "~";
+}
+
+h2::before {
+    content: "~~";
+}
+
+h3::before {
+    content: "~~~";
+}
+
+h1 {
+    line-height: 2em;
+}
+
+hr {
+    border: 2px dashed;
+}
+
+.page {
+    margin: auto;
+    max-width: 800px;
+    min-width: 300px;
+    text-wrap-mode: wrap;
+    text-wrap-style: pretty;
+
+    
+
+    padding: 1em;
+    border-left: 2px;
+}
+
+mark {
+    background-color: transparent;
+    color: var(--text-color-accent);
+}
+
+img {
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+    image-rendering: -webkit-optimize-contrast;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2em;
+    padding-top: 2em ;
+}
+
+code.block {
+    display: flex;
+    padding: 10px;
+
+    background-color: #0000003a;
+    font-size: 12px;
+}
+
+section {
+    border-left-style: solid;
+    border-left-color: 1px;
+    border-left-color: var(--text-color-accent);
+    padding-left: 5px;
+}

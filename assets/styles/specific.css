@@ -1,0 +1,57 @@
+#img-icon-homepage {
+    float: left;
+    margin: 1em;
+
+}
+
+#placeholder-header {
+    background-image: url('/assets/banner.png');
+    background-size: 110%;
+    background-repeat: no-repeat;
+    background-position-y: 0px;
+    background-position-x: center;
+
+
+    min-width: 600px;
+    min-height: 250px;
+    max-width: min-content;
+    max-height: calc(min-content + 25px);
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+#webtitle {
+    position: relative;
+    top: 100px;
+    left: 20px;
+    
+    max-width: 30px;
+
+    font-style: italic;
+    font-size: 20px;
+    font-weight: 621;
+
+    color: rgb(59, 23, 14);
+    
+}
+
+#placeholder-header nav {
+    background: color-mix(in srgb, var(--text-color-accent) 35%, transparent );
+    margin-top: auto;
+    margin-bottom: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#cb {
+    background-color: #39328c;
+    padding-right: 5px;
+    padding-left: 5px;
+
+    
+}
+#cb:hover {
+    background-color: #6257db;
+}
